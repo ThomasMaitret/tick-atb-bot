@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATB Tick Helper</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="card">
+      <h1>ATB Tick Helper</h1>
+
+      <form id="tick-form">
+        <label>
+          Base speed
+          <input id="baseSpeed" type="number" min="80" max="130" value="100" required />
+        </label>
+
+        <label>
+          SPD lead
+          <input id="lead" type="number" min="0" max="33" value="0" required />
+        </label>
+
+        <button type="submit">Calculate</button>
+      </form>
+
+      <section id="results" class="results" aria-live="polite"></section>
+    </main>
+
+    <script src="./tick.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
